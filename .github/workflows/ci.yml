@@ -1,0 +1,34 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: pipeline } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --python 3.12 --locked
+      - run: uv run ruff check .
+      - run: uv run pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci
+      - run: npm ci
+        working-directory: web
+      - run: npm run typecheck && npm test
+        working-directory: web
+      # Build against an empty local database so every page renders its empty states.
+      - run: node scripts/localdb.mjs start
+      - run: uv sync --python 3.12 --locked && uv run python -m thawline.run migrate seed
+        working-directory: pipeline
+      - run: npm run build
+        working-directory: web

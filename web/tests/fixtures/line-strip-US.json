@@ -1,0 +1,116 @@
+{
+ "dataThrough": "2026-10-30",
+ "updated": "2026-11-10T18:50:14.950768+01:00",
+ "items": [
+  {
+   "id": "indeed.US.software-development",
+   "name": "Software Development",
+   "short": "Software",
+   "value": 81.26,
+   "valueThen": 75.7,
+   "href": "/series/indeed.US.software-development",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.it-infrastructure-operations-and-support",
+   "name": "IT Infrastructure, Operations & Support",
+   "short": "IT operations",
+   "value": 69.73,
+   "valueThen": 71.55,
+   "href": "/series/indeed.US.it-infrastructure-operations-and-support",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.data-and-analytics",
+   "name": "Data & Analytics",
+   "short": "Data and analytics",
+   "value": 61.95,
+   "valueThen": 61.5,
+   "href": "/series/indeed.US.data-and-analytics",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.marketing",
+   "name": "Marketing",
+   "short": "Marketing",
+   "value": 77.27,
+   "valueThen": 75.59,
+   "href": "/series/indeed.US.marketing",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.media-and-communications",
+   "name": "Media & Communications",
+   "short": "Media",
+   "value": 67.32,
+   "valueThen": 66.64,
+   "href": "/series/indeed.US.media-and-communications",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.customer-service",
+   "name": "Customer Service",
+   "short": "Customer service",
+   "value": 86.88,
+   "valueThen": 88.71,
+   "href": "/series/indeed.US.customer-service",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.project-management",
+   "name": "Project Management",
+   "short": "Project management",
+   "value": 117.77,
+   "valueThen": 112.2,
+   "href": "/series/indeed.US.project-management",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.human-resources",
+   "name": "Human Resources",
+   "short": "Human resources",
+   "value": 98.76,
+   "valueThen": 94.95,
+   "href": "/series/indeed.US.human-resources",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.banking-and-finance",
+   "name": "Banking & Finance",
+   "short": "Banking and finance",
+   "value": 107.86,
+   "valueThen": 106.43,
+   "href": "/series/indeed.US.banking-and-finance",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.scientific-research-and-development",
+   "name": "Scientific Research & Development",
+   "short": "Scientific research",
+   "value": 83.99,
+   "valueThen": 78.87,
+   "href": "/series/indeed.US.scientific-research-and-development",
+   "reference": false
+  },
+  {
+   "id": "indeed.US.all",
+   "name": "All jobs",
+   "short": "All jobs",
+   "value": 103.79,
+   "valueThen": 102.26,
+   "href": "/series/indeed.US.all",
+   "reference": true
+  }
+ ],
+ "thaw": {
+  "week": "2026-10-30",
+  "score": 55.44779671387159,
+  "state": "Thawing",
+  "level": 38.90642857142859,
+  "momentum": 78.60571211329177,
+  "weights": {
+   "level": 58.3333,
+   "momentum": 41.6667
+  }
+ }
+}

@@ -1,0 +1,38 @@
+[
+ {
+  "id": 585,
+  "date": "2026-10-30",
+  "sentence": "Customer Service postings in the United States have fallen for 6 weeks.",
+  "href": "/series/indeed.US.customer-service"
+ },
+ {
+  "id": 581,
+  "date": "2026-10-23",
+  "sentence": "Marketing postings in the United States have fallen for 6 weeks.",
+  "href": "/series/indeed.US.marketing"
+ },
+ {
+  "id": 576,
+  "date": "2026-10-16",
+  "sentence": "Roles mapped to Media & Communications in the United States moved from Thawing to Cold.",
+  "href": "/series/indeed.US.media-and-communications"
+ },
+ {
+  "id": 574,
+  "date": "2026-10-16",
+  "sentence": "Media & Communications postings in the United States have fallen for 6 weeks.",
+  "href": "/series/indeed.US.media-and-communications"
+ },
+ {
+  "id": 572,
+  "date": "2026-10-16",
+  "sentence": "Data & Analytics postings in the United States have risen for 6 weeks.",
+  "href": "/series/indeed.US.data-and-analytics"
+ },
+ {
+  "id": 571,
+  "date": "2026-10-16",
+  "sentence": "Banking & Finance postings in the United States have risen for 6 weeks.",
+  "href": "/series/indeed.US.banking-and-finance"
+ }
+]

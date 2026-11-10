@@ -1,0 +1,202 @@
+date,jobcountry,indeed_job_postings_index,variable,display_name
+2020-02-01,US,100,total postings,Accounting
+2020-02-01,US,100,new postings,Accounting
+2020-02-02,US,100.3,total postings,Accounting
+2020-02-02,US,100.6,new postings,Accounting
+2020-02-03,US,100.56,total postings,Accounting
+2020-02-03,US,100.78,new postings,Accounting
+2020-02-04,US,100.57,total postings,Accounting
+2020-02-04,US,100.36,new postings,Accounting
+2020-02-05,US,100.57,total postings,Accounting
+2020-02-05,US,99.58,new postings,Accounting
+2020-02-06,US,100.7,total postings,Accounting
+2020-02-06,US,98.77,new postings,Accounting
+2020-02-07,US,100.69,total postings,Accounting
+2020-02-07,US,97.83,new postings,Accounting
+2020-02-08,US,101.27,total postings,Accounting
+2020-02-08,US,96.78,new postings,Accounting
+2020-02-09,US,101.22,total postings,Accounting
+2020-02-09,US,96.17,new postings,Accounting
+2020-02-10,US,101.25,total postings,Accounting
+2020-02-10,US,96.39,new postings,Accounting
+2020-02-11,US,101.49,total postings,Accounting
+2020-02-11,US,96.78,new postings,Accounting
+2020-02-12,US,101.68,total postings,Accounting
+2020-02-12,US,97.83,new postings,Accounting
+2020-02-13,US,101.72,total postings,Accounting
+2020-02-13,US,98.47,new postings,Accounting
+2020-02-14,US,101.88,total postings,Accounting
+2020-02-14,US,98.89,new postings,Accounting
+2020-02-15,US,101.59,total postings,Accounting
+2020-02-15,US,99.46,new postings,Accounting
+2020-02-16,US,101.67,total postings,Accounting
+2020-02-16,US,100.21,new postings,Accounting
+2020-02-17,US,101.66,total postings,Accounting
+2020-02-17,US,100.15,new postings,Accounting
+2020-02-18,US,101.58,total postings,Accounting
+2020-02-18,US,99.56,new postings,Accounting
+2020-02-19,US,101.57,total postings,Accounting
+2020-02-19,US,98.66,new postings,Accounting
+2020-02-20,US,101.31,total postings,Accounting
+2020-02-20,US,98.28,new postings,Accounting
+2020-02-21,US,100.98,total postings,Accounting
+2020-02-21,US,98.38,new postings,Accounting
+2020-02-22,US,100.71,total postings,Accounting
+2020-02-22,US,98.57,new postings,Accounting
+2020-02-23,US,100.36,total postings,Accounting
+2020-02-23,US,98.45,new postings,Accounting
+2020-02-24,US,100.32,total postings,Accounting
+2020-02-24,US,98.62,new postings,Accounting
+2020-02-25,US,100.09,total postings,Accounting
+2020-02-25,US,100.22,new postings,Accounting
+2020-02-26,US,100.36,total postings,Accounting
+2020-02-26,US,101.65,new postings,Accounting
+2020-02-27,US,100.99,total postings,Accounting
+2020-02-27,US,102.68,new postings,Accounting
+2020-02-28,US,101.67,total postings,Accounting
+2020-02-28,US,103.08,new postings,Accounting
+2020-02-29,US,102.46,total postings,Accounting
+2020-02-29,US,103.47,new postings,Accounting
+2020-03-01,US,103.25,total postings,Accounting
+2020-03-01,US,104.27,new postings,Accounting
+2020-03-02,US,103.73,total postings,Accounting
+2020-03-02,US,104.9,new postings,Accounting
+2020-03-03,US,104.38,total postings,Accounting
+2020-03-03,US,104.01,new postings,Accounting
+2020-03-04,US,104.45,total postings,Accounting
+2020-03-04,US,103,new postings,Accounting
+2020-03-05,US,104.37,total postings,Accounting
+2020-03-05,US,101.89,new postings,Accounting
+2020-03-06,US,104.33,total postings,Accounting
+2020-03-06,US,101.03,new postings,Accounting
+2020-03-07,US,104.23,total postings,Accounting
+2020-03-07,US,99.77,new postings,Accounting
+2020-03-08,US,104.02,total postings,Accounting
+2020-03-08,US,98.15,new postings,Accounting
+2020-03-09,US,103.69,total postings,Accounting
+2020-03-09,US,96.38,new postings,Accounting
+2020-03-10,US,103.34,total postings,Accounting
+2020-03-10,US,95.16,new postings,Accounting
+2020-03-11,US,103.04,total postings,Accounting
+2020-03-11,US,94.69,new postings,Accounting
+2020-03-12,US,102.03,total postings,Accounting
+2020-03-12,US,94.31,new postings,Accounting
+2020-03-13,US,100.94,total postings,Accounting
+2020-03-13,US,93.85,new postings,Accounting
+2020-03-14,US,99.86,total postings,Accounting
+2020-03-14,US,93.13,new postings,Accounting
+2020-03-15,US,98.67,total postings,Accounting
+2020-03-15,US,92.43,new postings,Accounting
+2020-03-16,US,97.7,total postings,Accounting
+2020-03-16,US,92.35,new postings,Accounting
+2020-03-17,US,96.58,total postings,Accounting
+2020-03-17,US,90.65,new postings,Accounting
+2020-03-18,US,95.24,total postings,Accounting
+2020-03-18,US,87.44,new postings,Accounting
+2020-03-19,US,94.28,total postings,Accounting
+2020-03-19,US,82.98,new postings,Accounting
+2020-03-20,US,93.06,total postings,Accounting
+2020-03-20,US,77.6,new postings,Accounting
+2020-03-21,US,91.26,total postings,Accounting
+2020-03-21,US,72,new postings,Accounting
+# ... trimmed: 231617 lines, 12206341 bytes, sha256 prefix d3c8d54151c0dd37, fetched 2026-11-10 ...
+2026-09-11,US,107.24,total postings,Loading & Stocking
+2026-09-11,US,102.84,new postings,Loading & Stocking
+2026-09-12,US,107.38,total postings,Loading & Stocking
+2026-09-12,US,99.25,new postings,Loading & Stocking
+2026-09-13,US,107.46,total postings,Loading & Stocking
+2026-09-13,US,96.34,new postings,Loading & Stocking
+2026-09-14,US,107.18,total postings,Loading & Stocking
+2026-09-14,US,92.89,new postings,Loading & Stocking
+2026-09-15,US,107.37,total postings,Loading & Stocking
+2026-09-15,US,94.05,new postings,Loading & Stocking
+2026-09-16,US,107.72,total postings,Loading & Stocking
+2026-09-16,US,95.4,new postings,Loading & Stocking
+2026-09-17,US,108.03,total postings,Loading & Stocking
+2026-09-17,US,97.65,new postings,Loading & Stocking
+2026-09-18,US,108.26,total postings,Loading & Stocking
+2026-09-18,US,100.02,new postings,Loading & Stocking
+2026-09-19,US,108.4,total postings,Loading & Stocking
+2026-09-19,US,101.99,new postings,Loading & Stocking
+2026-09-20,US,108.63,total postings,Loading & Stocking
+2026-09-20,US,103.21,new postings,Loading & Stocking
+2026-09-21,US,108.9,total postings,Loading & Stocking
+2026-09-21,US,104.05,new postings,Loading & Stocking
+2026-09-22,US,109.02,total postings,Loading & Stocking
+2026-09-22,US,103.57,new postings,Loading & Stocking
+2026-09-23,US,109.15,total postings,Loading & Stocking
+2026-09-23,US,103.07,new postings,Loading & Stocking
+2026-09-24,US,109.38,total postings,Loading & Stocking
+2026-09-24,US,103.67,new postings,Loading & Stocking
+2026-09-25,US,109.58,total postings,Loading & Stocking
+2026-09-25,US,104.43,new postings,Loading & Stocking
+2026-09-26,US,109.73,total postings,Loading & Stocking
+2026-09-26,US,105.45,new postings,Loading & Stocking
+2026-09-27,US,109.87,total postings,Loading & Stocking
+2026-09-27,US,107.09,new postings,Loading & Stocking
+2026-09-28,US,109.98,total postings,Loading & Stocking
+2026-09-28,US,109.49,new postings,Loading & Stocking
+2026-09-29,US,110.12,total postings,Loading & Stocking
+2026-09-29,US,110.63,new postings,Loading & Stocking
+2026-09-30,US,110.33,total postings,Loading & Stocking
+2026-09-30,US,112.02,new postings,Loading & Stocking
+2026-10-01,US,110.24,total postings,Loading & Stocking
+2026-10-01,US,110.3,new postings,Loading & Stocking
+2026-10-02,US,110.19,total postings,Loading & Stocking
+2026-10-02,US,108.9,new postings,Loading & Stocking
+2026-10-03,US,110.16,total postings,Loading & Stocking
+2026-10-03,US,107.64,new postings,Loading & Stocking
+2026-10-04,US,109.98,total postings,Loading & Stocking
+2026-10-04,US,105.92,new postings,Loading & Stocking
+2026-10-05,US,109.83,total postings,Loading & Stocking
+2026-10-05,US,103.97,new postings,Loading & Stocking
+2026-10-06,US,109.74,total postings,Loading & Stocking
+2026-10-06,US,102.81,new postings,Loading & Stocking
+2026-10-07,US,109.47,total postings,Loading & Stocking
+2026-10-07,US,100.88,new postings,Loading & Stocking
+2026-10-08,US,109.29,total postings,Loading & Stocking
+2026-10-08,US,100.51,new postings,Loading & Stocking
+2026-10-09,US,109.06,total postings,Loading & Stocking
+2026-10-09,US,99.63,new postings,Loading & Stocking
+2026-10-10,US,108.76,total postings,Loading & Stocking
+2026-10-10,US,98.34,new postings,Loading & Stocking
+2026-10-11,US,108.51,total postings,Loading & Stocking
+2026-10-11,US,97.36,new postings,Loading & Stocking
+2026-10-12,US,108.29,total postings,Loading & Stocking
+2026-10-12,US,96.65,new postings,Loading & Stocking
+2026-10-13,US,107.96,total postings,Loading & Stocking
+2026-10-13,US,95.48,new postings,Loading & Stocking
+2026-10-14,US,107.85,total postings,Loading & Stocking
+2026-10-14,US,94.63,new postings,Loading & Stocking
+2026-10-15,US,107.77,total postings,Loading & Stocking
+2026-10-15,US,94.6,new postings,Loading & Stocking
+2026-10-16,US,107.84,total postings,Loading & Stocking
+2026-10-16,US,94.61,new postings,Loading & Stocking
+2026-10-17,US,107.9,total postings,Loading & Stocking
+2026-10-17,US,94.7,new postings,Loading & Stocking
+2026-10-18,US,108.06,total postings,Loading & Stocking
+2026-10-18,US,94.93,new postings,Loading & Stocking
+2026-10-19,US,108.2,total postings,Loading & Stocking
+2026-10-19,US,94.71,new postings,Loading & Stocking
+2026-10-20,US,108.35,total postings,Loading & Stocking
+2026-10-20,US,95.08,new postings,Loading & Stocking
+2026-10-21,US,108.42,total postings,Loading & Stocking
+2026-10-21,US,95.9,new postings,Loading & Stocking
+2026-10-22,US,108.49,total postings,Loading & Stocking
+2026-10-22,US,96.21,new postings,Loading & Stocking
+2026-10-23,US,108.38,total postings,Loading & Stocking
+2026-10-23,US,95.99,new postings,Loading & Stocking
+2026-10-24,US,108.3,total postings,Loading & Stocking
+2026-10-24,US,95.93,new postings,Loading & Stocking
+2026-10-25,US,108.21,total postings,Loading & Stocking
+2026-10-25,US,95.83,new postings,Loading & Stocking
+2026-10-26,US,108.15,total postings,Loading & Stocking
+2026-10-26,US,96.16,new postings,Loading & Stocking
+2026-10-27,US,108.13,total postings,Loading & Stocking
+2026-10-27,US,96.05,new postings,Loading & Stocking
+2026-10-28,US,108.11,total postings,Loading & Stocking
+2026-10-28,US,95.61,new postings,Loading & Stocking
+2026-10-29,US,107.98,total postings,Loading & Stocking
+2026-10-29,US,94.94,new postings,Loading & Stocking
+2026-10-30,US,107.82,total postings,Loading & Stocking
+2026-10-30,US,94.57,new postings,Loading & Stocking

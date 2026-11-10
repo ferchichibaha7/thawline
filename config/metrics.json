@@ -1,0 +1,61 @@
+{
+  "$comment": "Single source for weights, thresholds and versions. Read by the pipeline (Python) and by the /method page (TypeScript). Changing a value here bumps the matching version and needs a change-log entry in web/content/method/changelog.md.",
+  "line": {
+    "baseline_date": "2020-02-01",
+    "at_line_band": 2
+  },
+  "thaw_index": {
+    "version": "ti-1",
+    "weights": { "level": 35, "momentum": 25, "breadth": 20, "entry_access": 10, "competition": 10 },
+    "required": ["level", "momentum"],
+    "level": { "floor": 60, "span": 50, "mean_weeks": 4 },
+    "momentum": { "low": -10, "span": 20, "weeks": 13 },
+    "states": [
+      { "min": 0, "name": "Frozen" },
+      { "min": 25, "name": "Cold" },
+      { "min": 50, "name": "Thawing" },
+      { "min": 75, "name": "Open" }
+    ],
+    "missing_reasons": {
+      "breadth": "Needs 26 weeks of company job-board snapshots. Collection has not started.",
+      "entry_access": "Needs at least 200 open postings classified by level. Collection has not started.",
+      "competition": "Needs Hacker News hiring-thread counts. Collection has not started."
+    }
+  },
+  "forecast": {
+    "version": "fc-1",
+    "min_weeks": 156,
+    "backtest_weeks": 104,
+    "origin_step": 4,
+    "horizons": [13, 26, 52],
+    "ship_mase_26": 0.95,
+    "paths": 2000,
+    "block_weeks": 8,
+    "publish_weeks": 104,
+    "display_weeks": 78,
+    "seed": 20200201
+  },
+  "freshness": { "late_multiple": 2, "stale_multiple": 3 },
+  "statements": { "streak_min": 4, "flat_band": 2, "direction_weeks": 13 },
+  "signals": { "streak_lengths": [6, 9, 13, 26], "cooldown_days": 28, "state_hold_weeks": 2, "lookback_weeks": 26 },
+  "line_strip": {
+    "scale_desktop_px": 3,
+    "scale_mobile_px": 2,
+    "clamp_points": 60,
+    "tail_weeks": 13,
+    "frozen_below": 25,
+    "thawing_above": 10,
+    "sectors": [
+      { "sector": "Software Development", "short": "Software" },
+      { "sector": "IT Infrastructure, Operations & Support", "short": "IT operations" },
+      { "sector": "Data & Analytics", "short": "Data and analytics" },
+      { "sector": "Marketing", "short": "Marketing" },
+      { "sector": "Media & Communications", "short": "Media" },
+      { "sector": "Customer Service", "short": "Customer service" },
+      { "sector": "Project Management", "short": "Project management" },
+      { "sector": "Human Resources", "short": "Human resources" },
+      { "sector": "Banking & Finance", "short": "Banking and finance" },
+      { "sector": "Scientific Research & Development", "short": "Scientific research" }
+    ]
+  }
+}

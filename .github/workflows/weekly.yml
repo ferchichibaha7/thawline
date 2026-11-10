@@ -1,0 +1,28 @@
+name: weekly
+on:
+  schedule:
+    - cron: '20 6 * * 6' # Saturday 06:20 UTC (spec 7.1)
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: pipeline } }
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+      CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+      REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --python 3.12 --locked
+      - run: uv run python -m thawline.run migrate weekly
+      - name: Open an issue on failure
+        if: failure()
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: >
+          gh issue create --title "Weekly pipeline failed $(date -u +%F)"
+          --body "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

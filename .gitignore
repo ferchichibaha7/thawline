@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+data/pg/
+data/pg.log
+data/raw/
+data/exports/
+pipeline/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/

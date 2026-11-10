@@ -1,0 +1,27 @@
+# Role families (spec section 7.3). `indeed_sector` was checked on 2026-11-10
+# against the sector names in the Indeed files themselves, which differ from the
+# repository's older sector-job-title-examples.csv: "IT Operations & Helpdesk",
+# "Information Design & Documentation" and "Mathematics" no longer appear, and
+# "IT Infrastructure, Operations & Support", "IT Systems & Solutions" and
+# "Data & Analytics" do. Reasons for each change are in docs/DECISIONS.md (D-006).
+families:
+  - { id: frontend, label: Frontend engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: backend, label: Backend engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: fullstack, label: Full-stack engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: mobile, label: Mobile engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: devops, label: "DevOps, SRE and platform", grp: Engineering, indeed_sector: Software Development }
+  - { id: data_eng, label: Data engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: data_sci, label: Data science and analytics, grp: Engineering, indeed_sector: Data & Analytics }
+  - { id: ml_ai, label: Machine learning and AI engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: qa, label: QA and test engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: security, label: Security engineering, grp: Engineering, indeed_sector: Software Development }
+  - { id: embedded, label: Embedded and hardware software, grp: Engineering, indeed_sector: Software Development }
+  - { id: eng_mgmt, label: Engineering management, grp: Engineering, indeed_sector: Software Development }
+  - { id: it_ops, label: IT operations and helpdesk, grp: Engineering, indeed_sector: "IT Infrastructure, Operations & Support" }
+  - { id: product_design, label: "Product, UX and UI design", grp: Design, indeed_sector: Arts & Entertainment }
+  - { id: ux_research, label: UX research, grp: Design, indeed_sector: Arts & Entertainment }
+  - { id: brand_graphic, label: "Brand, visual and graphic design", grp: Design, indeed_sector: Arts & Entertainment }
+  - { id: content_design, label: Content design and UX writing, grp: Design, indeed_sector: Media & Communications }
+  - { id: tech_writing, label: Technical writing, grp: Adjacent, indeed_sector: Media & Communications }
+  - { id: product_mgmt, label: Product management, grp: Adjacent, indeed_sector: Software Development }
+  - { id: support, label: Customer support, grp: Adjacent, indeed_sector: Customer Service }

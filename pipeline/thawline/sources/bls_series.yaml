@@ -1,0 +1,16 @@
+# BLS series used by Thawline. IDs and titles checked 2026-11-10 against the
+# BLS API and https://download.bls.gov/pub/time.series/ce/ce.industry
+series:
+  - id: CES6054150001
+    label: Employment in computer systems design and related services
+    unit: thousands of jobs
+    seasonal_adj: true
+  - id: CES5051320001
+    label: Employment in software publishers
+    unit: thousands of jobs
+    seasonal_adj: true
+  - id: JTS510000000000000JOL
+    label: Job openings in the information sector
+    unit: thousands of openings
+    seasonal_adj: true
+start_year: 1990
