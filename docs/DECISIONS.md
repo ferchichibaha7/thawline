@@ -130,3 +130,11 @@ The owner does not want to pay for the Anthropic API. Spec 7.6 uses an LLM for t
 The cost is moderator time, mostly for the 25-company launch set. If an API key is added later, the pipeline uses it without other changes.
 
 Update: extraction will have a pluggable backend, `EXTRACT_BACKEND=manual|ollama|anthropic`, default `manual`. With `ollama`, a small local model on the owner's laptop (RTX 3050, 6 GB) drafts the fields and the same validators and moderator approval apply, so a wrong draft is rejected or corrected rather than published. It runs on the laptop, not in GitHub Actions, which has no GPU. Before it is used, it must match hand-entered fields on a labelled set of real articles.
+
+## D-024 Hosted setup
+
+- Supabase project `thawline` (ref `dguewkxnbbcqeaegbosb`), organisation Thawline, free plan, East US (North Virginia), to sit next to Vercel's default region. "Automatically expose new tables" is off and automatic RLS is on, as Supabase recommends: the site reads Postgres directly through the read-only role, not the Data API.
+- The pipeline connects through the session pooler (port 5432) because GitHub's runners have no IPv6; the site connects through the transaction pooler (port 6543) with prepared statements off.
+- CSV and JSON exports go to the public Storage bucket `exports`. Raw source responses are not copied to Storage (Indeed alone is about 50 MB a week, past the free 1 GB within months); they are kept as GitHub Actions artifacts for 90 days instead.
+- `scripts/setup_supabase.py` is run by the owner in their own terminal. It asks for the database password and secret key with hidden input, so secrets never pass through a chat, and creates the read-only role with a random password.
+- Revalidation is not configured yet: pages refresh hourly on their own, which is enough for weekly data.

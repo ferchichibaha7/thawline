@@ -1,7 +1,6 @@
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
 import type { Metadata } from 'next';
 import { ErrorState } from '@/components/ErrorState';
+import { readExport } from '@/lib/exports';
 import { Statement } from '@/components/Statement';
 import { formatDate, formatNumber } from '@/lib/format';
 import { attempt, datasetsWithFreshness } from '@/lib/queries';
@@ -19,9 +18,9 @@ const FRESHNESS_WORDS = { fresh: 'On time', late: 'Late', stale: 'Stale', never:
 type Manifest = { generated_at: string; files: { name: string; rows: number; csv: string; json: string; license: string; attribution: string }[] };
 
 async function manifest(): Promise<Manifest | null> {
-  const dir = process.env.THAWLINE_EXPORT_DIR ?? path.join(/*turbopackIgnore: true*/ process.cwd(), '..', 'data', 'exports');
+  const body = await readExport('manifest.json');
   try {
-    return JSON.parse(await readFile(path.join(/*turbopackIgnore: true*/ dir, 'manifest.json'), 'utf8'));
+    return body ? (JSON.parse(body.toString('utf8')) as Manifest) : null;
   } catch {
     return null;
   }

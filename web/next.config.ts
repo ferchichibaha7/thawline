@@ -7,6 +7,12 @@ const config: NextConfig = {
   // The shared metrics config lives one level up, at the repository root.
   outputFileTracingRoot: path.join(import.meta.dirname, '..'),
   turbopack: { root: path.join(import.meta.dirname, '..') },
+  // Files read at request time with fs, which tracing cannot see on its own.
+  outputFileTracingIncludes: {
+    '/method': ['./content/method/**'],
+    '/api/og': ['./assets/fonts/**'],
+    '/opengraph-image': ['./assets/fonts/**'],
+  },
   async headers() {
     return [
       {

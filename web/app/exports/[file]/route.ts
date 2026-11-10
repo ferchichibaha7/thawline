@@ -1,26 +1,20 @@
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
+import { NextResponse } from 'next/server';
+import { readExport, remoteExportUrl } from '@/lib/exports';
 
-/**
- * Serves the pipeline's CSV and JSON snapshots from data/exports, the local
- * stand-in for Supabase Storage's public/exports (spec 9.3).
- */
+/** CSV and JSON snapshots (spec 9.3): Supabase Storage in production, data/exports locally. */
 export async function GET(_request: Request, { params }: { params: Promise<{ file: string }> }) {
   const { file } = await params;
   if (!/^[a-z_]+\.(csv|json)$/.test(file)) return new Response('Not found', { status: 404 });
-  const dir = process.env.THAWLINE_EXPORT_DIR ?? path.join(/*turbopackIgnore: true*/ process.cwd(), '..', 'data', 'exports');
-  try {
-    const body = await readFile(path.join(/*turbopackIgnore: true*/ dir, file));
-    const csv = file.endsWith('.csv');
-    return new Response(body, {
-      headers: {
-        'Content-Type': csv ? 'text/csv; charset=utf-8' : 'application/json',
-        'Content-Disposition': `attachment; filename="thawline-${file}"`,
-        'Cache-Control': 'public, s-maxage=3600',
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
-  } catch {
-    return new Response('Not found', { status: 404 });
-  }
+  const remote = remoteExportUrl(file);
+  if (remote) return NextResponse.redirect(remote, 302);
+  const body = await readExport(file);
+  if (!body) return new Response('Not found', { status: 404 });
+  return new Response(new Uint8Array(body), {
+    headers: {
+      'Content-Type': file.endsWith('.csv') ? 'text/csv; charset=utf-8' : 'application/json',
+      'Content-Disposition': `attachment; filename="thawline-${file}"`,
+      'Cache-Control': 'public, s-maxage=3600',
+      'Access-Control-Allow-Origin': '*',
+    },
+  });
 }

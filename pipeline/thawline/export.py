@@ -7,6 +7,7 @@ import csv
 import json
 from datetime import UTC, datetime
 
+from . import storage
 from .config import EXPORT_DIR, metrics
 
 EXPORTS = {
@@ -77,4 +78,8 @@ def run(conn) -> int:
         })
         total += len(rows)
     (EXPORT_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2, default=str))
+    if storage.configured():
+        files = [EXPORT_DIR / f for e in manifest["files"] for f in (e["csv"], e["json"])]
+        storage.upload([*files, EXPORT_DIR / "manifest.json"])
+        print(f"  uploaded {len(files) + 1} files to Supabase Storage")
     return total
