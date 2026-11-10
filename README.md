@@ -8,6 +8,8 @@ The build follows a written specification kept outside this repository; referenc
 
 ## Status
 
+Live at **https://thawline.vercel.app** (Vercel, Supabase, GitHub Actions; all free tiers).
+
 Phase 0 (foundations) and most of phase 1 (the market) are built and run locally, with no accounts:
 
 - Pipeline: Indeed Hiring Lab, BLS and FRED ingestion; Thaw Index `ti-1` (Level and Momentum); backtested forecasts `fc-1` with the ship rule; signals; CSV and JSON exports.
